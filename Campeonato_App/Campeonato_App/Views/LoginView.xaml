@@ -4,12 +4,11 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="Campeonato_App.Views.ExemploView3">
+             x:Class="Campeonato_App.Views.LoginView">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Explorar outros componentes!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+
+          
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

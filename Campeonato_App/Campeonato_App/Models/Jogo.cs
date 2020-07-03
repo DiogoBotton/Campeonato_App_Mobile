@@ -20,6 +20,13 @@ namespace Campeonato_App.Models
             return $"{selecaoCasa} { placarCasa} X {selecaoVisitante} {placarVisitante}";
 
         }
+        public string dataFormatada
+        {
+            get
+            {
+                return data.ToString("dd/MM/yyyy");
+            }
+        }
 
     }
 }

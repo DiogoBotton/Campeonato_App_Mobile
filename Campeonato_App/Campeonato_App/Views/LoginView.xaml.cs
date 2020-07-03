@@ -10,11 +10,16 @@ using Xamarin.Forms.Xaml;
 namespace Campeonato_App.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class ExemploView : ContentPage
+    public partial class LoginView : ContentPage
     {
-        public ExemploView()
+        public LoginView()
         {
             InitializeComponent();
+        }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+
         }
     }
 }
