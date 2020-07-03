@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:campeonato_app="clr-namespace:Campeonato_App"
+             mc:Ignorable="d"
+             x:Class="Campeonato_App.Views.CadastroView">
+    <ContentPage.Content>
+        <StackLayout
+            Padding="40">
+            <Frame BackgroundColor="White"
+                   BorderColor="Black"
+                   CornerRadius="100"
+                   WidthRequest="150"
+                   HorizontalOptions="Center"
+                   Padding="0"
+                   IsClippedToBounds="True">
+               <Image
+               Source="baseline_person_black_48dp.png"
+               HeightRequest="150"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+                />
+            </Frame>
+            
+            <StackLayout Orientation="Horizontal">
+                <Image Source="baseline_person_black_48dp.png"
+                       HorizontalOptions="Start"
+                       HeightRequest="40"
+                       Margin="0, 20, 0, 0"
+                />
+                <campeonato_app:CustomEntry Placeholder="Nome"
+                       BackgroundColor="Transparent" 
+                       TextColor="Black"
+                       Margin="0, 20, 0, 0"
+                       HorizontalOptions="FillAndExpand"
+                />
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Image Source="baseline_person_black_48dp.png"
+                       HorizontalOptions="Start"
+                       HeightRequest="40"
+                       Margin="0, 20, 0, 0"
+                />
+                <campeonato_app:CustomEntry Placeholder="Apelido"
+                       BackgroundColor="Transparent" 
+                       TextColor="Black"
+                       Margin="0, 20, 0, 0"
+                       HorizontalOptions="FillAndExpand"
+                />
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Image Source="baseline_email_black_48dp.png"
+                       HorizontalOptions="Start"
+                       HeightRequest="40"
+                       Margin="0, 20, 0, 0"
+                />
+                <campeonato_app:CustomEntry Placeholder="Email"
+                       BackgroundColor="Transparent" 
+                       TextColor="Black"
+                       Margin="0, 20, 0, 0"
+                       HorizontalOptions="FillAndExpand"
+                />
+            </StackLayout>
+
+
+            <StackLayout Orientation="Horizontal"
+                         Padding="0, 0, 0, 15">
+                <Image Source="baseline_person_black_48dp.png"
+                       HorizontalOptions="Start"
+                       HeightRequest="40"
+                       Margin="0, 20, 0, 0"
+                />
+                <campeonato_app:CustomEntry Placeholder="Email ou apelido"
+                       BackgroundColor="Transparent" 
+                       TextColor="Black"
+                       Margin="0, 20, 0, 0"
+                       HorizontalOptions="FillAndExpand"
+                />
+            </StackLayout>
+
+            <Button Text="Cadastre-se"
+                    Margin="40, 0"
+                    TextColor="White" 
+                    CornerRadius="5"
+                    BackgroundColor="Green"
+                    Pressed="Button_Pressed_1"
+                    WidthRequest="1000"
+                    HorizontalOptions="Center"
+            />
+            
+            <Button Text="Login"
+                    TextColor="Blue"
+                    Margin="0, 0, 10, 0" FontSize="16"
+                    BackgroundColor="Transparent"
+                    HorizontalOptions="FillAndExpand"
+                    Pressed="Button_Pressed"
+            />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

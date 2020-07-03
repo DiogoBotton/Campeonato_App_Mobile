@@ -18,7 +18,6 @@ namespace Campeonato_App.Models
         public override string ToString()
         {
             return $"{selecaoCasa} { placarCasa} X {selecaoVisitante} {placarVisitante}";
-
         }
 
     }

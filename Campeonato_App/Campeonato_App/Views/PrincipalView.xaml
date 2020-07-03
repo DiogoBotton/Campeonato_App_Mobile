@@ -49,45 +49,44 @@
                 </ListView.ItemsSource>
             </ListView>-->
             <ListView
-                x:Name="jogosList"
-                >
+                 x:Name="jogosList"
+                 VerticalOptions = "FillAndExpand"
+                 HorizontalOptions = "FillAndExpand"
+                 HasUnevenRows = "true">
                 <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <StackLayout
-                                Orientation="Horizontal"
-                                >
-                                <Label
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal">
+                            <Label
                                     Text="{Binding selecaoCasa}"
                                     HorizontalOptions="StartAndExpand"
                                     VerticalOptions="CenterAndExpand"
                                 />
-                                <Label
+                            <Label
                                     Text="{Binding placarCasa}"
                                     HorizontalOptions="CenterAndExpand"
                                     VerticalOptions="CenterAndExpand"
                                 />
-                                <Label
+                            <Label
                                     Text="X"
                                     HorizontalOptions="CenterAndExpand"
                                     VerticalOptions="CenterAndExpand"
                                 />
-                                <Label
+                            <Label
                                     Text="{Binding placarVisitante}"
                                     HorizontalOptions="Center"
                                     VerticalOptions="CenterAndExpand"
                                 />
-                                <Label
+                            <Label
                                     Text="{Binding selecaoVisitante}"
                                     HorizontalOptions="EndAndExpand"
                                     VerticalOptions="CenterAndExpand"
                                 />
-                            </StackLayout>
-                           
-                        </ViewCell>
-                    </DataTemplate>
+                        </StackLayout>
+
+                    </ViewCell>
+                </DataTemplate>
                 </ListView.ItemTemplate>
-                    
             </ListView>
 
             

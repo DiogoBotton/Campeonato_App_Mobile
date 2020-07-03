@@ -1,4 +1,5 @@
 ﻿using Campeonato_App.Models;
+using Campeonato_App.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,17 +17,8 @@ namespace Campeonato_App.Views
         public PrincipalView()
         {
             InitializeComponent();
-            List<Jogo> jogos = new List<Jogo>();
-            Jogo jogo = new Jogo();
-            jogo.selecaoCasa = "Brasil";
-            jogo.selecaoVisitante = "Argentina";
-            jogo.placarCasa = 2;
-            jogo.placarVisitante = 0;
-            jogo.data = Convert.ToDateTime("01/07/2020");
-            jogo.estadio = "Arena Fonte Nova";
-            jogos.Add(jogo);
 
-            jogosList.ItemsSource = jogos;
+            jogosList.ItemsSource = new PrincipalViewModel().jogos;
         }
     }
 }

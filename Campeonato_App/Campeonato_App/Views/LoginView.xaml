@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:campeonato_app="clr-namespace:Campeonato_App"
+             mc:Ignorable="d"
+             x:Class="Campeonato_App.Views.LoginView">
+    <ContentPage.Content>
+        <StackLayout
+            Padding="40">
+            <Image
+            Source="app_logo.png"
+            HeightRequest="170"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            />
+
+            <StackLayout Orientation="Horizontal">
+                <Image Source="baseline_person_black_48dp.png"
+                       HorizontalOptions="Start"
+                       HeightRequest="40"
+                       Margin="0, 20, 0, 0"
+                />
+                <campeonato_app:CustomEntry Placeholder="Email ou apelido"
+                       BackgroundColor="Transparent" 
+                       TextColor="Black"
+                       Margin="0, 20, 0, 0"
+                       HorizontalOptions="FillAndExpand"
+                />
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Image Source="baseline_lock_black_48dp.png"
+                       HorizontalOptions="Start"
+                       HeightRequest="40"
+                       Margin="0, 20, 0, 0"
+                />
+                <campeonato_app:CustomEntry Placeholder="Email"
+                       BackgroundColor="Transparent" 
+                       TextColor="Black"
+                       Margin="0, 20, 0, 0"
+                       HorizontalOptions="FillAndExpand"
+                />
+            </StackLayout>
+
+            <Button Text="Login" BackgroundColor="Green"
+                    Margin="30, 0"
+                    TextColor="White" 
+                    CornerRadius="3"
+                    Padding="0, 10, 0, 10"
+                    Pressed="Button_Pressed"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="Center"
+                    WidthRequest="100"
+            />
+            <Button Text="Cadastrar-se"
+                    TextColor="Blue"
+                    Margin="0, 0, 0, 0" FontSize="16"
+                    BackgroundColor="Transparent"
+                    VerticalOptions="EndAndExpand"
+                    HorizontalOptions="FillAndExpand"
+                    Pressed="Button_Pressed_1"
+            />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
