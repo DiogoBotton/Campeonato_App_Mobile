@@ -84,11 +84,11 @@
             <Button Text="Cadastre-se"
                     Margin="40, 0"
                     TextColor="White" 
-                    CornerRadius="5"
+                    CornerRadius="10"
                     BackgroundColor="Green"
-                    Pressed="Button_Pressed_1"
-                    WidthRequest="1000"
-                    HorizontalOptions="Center"
+                    Pressed="Button_Pressed"
+                    WidthRequest="300"
+                    HorizontalOptions="CenterAndExpand"
             />
             
             <Button Text="Login"
@@ -96,7 +96,7 @@
                     Margin="0, 0, 10, 0" FontSize="16"
                     BackgroundColor="Transparent"
                     HorizontalOptions="FillAndExpand"
-                    Pressed="Button_Pressed"
+                    Pressed="Button_Pressed_1"
             />
         </StackLayout>
     </ContentPage.Content>
